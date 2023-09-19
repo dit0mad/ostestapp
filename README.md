@@ -14,7 +14,7 @@ Clone this repo on any IDE and run "flutter pub get" to get all dependencies.
 ## Architecture.
 
 The app is architected with bloc following MVC pattern.
-All views have a binding (bloc) and each user interaction or communcation is done via sending events.
+All views have a binding (bloc) and each user interaction or communcation is done via sending events and changes are made by emitting new states.
 The app is layered into 4 separate blocs
   - Navigation Bloc
   - Interactive Bloc
