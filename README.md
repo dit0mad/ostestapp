@@ -20,9 +20,12 @@ The app is layered into 4 separate blocs
   - Interactive Bloc
   - Data Bloc
   - Middleware Bloc
+    
 To find the data flow, follow the dispatching of events and to their respective Bloc.
 
 * The middleware bloc is used to do some operations in the event of dispatching multiple events. This bloc will perform
   required operations and dispatch the result to their respective bloc.
+* All user interactions are handled within the interactive bloc.
+* This app uses a custom navigation process with the navigator, all navigation is handled in the navigation bloc.
 
 
