@@ -9,7 +9,7 @@ The data set provided is mutated accordingly.
 
 ## Getting Started
 
-Please run "flutter pub get" to get all dependencies.
+Clone this repo on any IDE and run "flutter pub get" to get all dependencies.
 
 ## Architecture.
 
