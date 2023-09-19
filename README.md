@@ -1,16 +1,28 @@
 # ostestapp
 
-A new Flutter project.
+Flutter Developer Test app for "Ourself".
+
+## Note
+Given the time constraint, most of my focus was led to the system design.
+No unit tests or http mocking since the requirements does not state it.
+The data set provided is mutated accordingly. 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Please run "flutter pub get" to get all dependencies.
 
-A few resources to get you started if this is your first Flutter project:
+## Architecture.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The app is architected with bloc following MVC pattern.
+All views have a binding (bloc) and each user interaction or communcation is done via sending events.
+The app is layered as into 4 separate bloc
+  - Navigation Bloc
+  - Interactive Bloc
+  - Data Bloc
+  - Middleware Bloc
+To find the data flow, follow the dispatching of events and to their respective Bloc.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* The middleware bloc is used to do some operations in the event of dispatching multiple events. This bloc will perform
+  required operations and dispatch the result to their respective bloc.
+
+
