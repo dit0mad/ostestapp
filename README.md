@@ -4,8 +4,8 @@ Flutter Developer Test app for "Ourself".
 
 ## Note
 Given the time constraint, most of my focus was led to the system design.
-No unit tests or http mocking since the requirements does not state it or heavy emphasis on UI.
-The data set provided was mutated accordingly. 
+No unit tests are done since the requirements does not state it. A simple UI is developed.
+The data set provided was mutated accordingly to my fit. 
 
 ## Getting Started
 
