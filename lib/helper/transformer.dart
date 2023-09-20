@@ -1,6 +1,7 @@
-//lets simulate http get and transform json to objects.
-
 import 'package:ostestapp/models/item.dart';
+
+//lets simulate http get and transform json to objects.
+//takes in the dataset and maps to Category: Item List
 
 List<Map<String, List<Item>>> jsonToCategoryItem(
   final Map<String, dynamic> json,

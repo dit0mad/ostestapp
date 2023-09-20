@@ -14,6 +14,7 @@ class DataStateBloc extends Bloc<ApiEvents, DataState> {
           const InitDataState(),
         ) {
     on<GetData>((event, emit) {
+      //getdata is dispatched initially to populate data.
       final data = jsonToCategoryItem(dataSet).toList();
 
       emit(
